@@ -22,7 +22,7 @@ function Login() {
         setErrors(validationErrors);
 
         if (validationErrors.email === '' && validationErrors.password === '') {
-            axios.post('https://backend-sql-login-page.onrender.com//login', values)
+            axios.post('https://gcfjjgiygikg.onrender.com/login', values)
                 .then((res) => {
                     if (res.data === "Success") {
                         navigate('/home');
