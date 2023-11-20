@@ -12,7 +12,7 @@ function ResetPassword() {
     axios.defaults.withCredentials = true;
     const handleSubmit = (e) => {
         e.preventDefault()
-        axios.post(`http://localhost:3001/reset-password/${id}/${token}`, { password })
+        axios.post(`https://sql-backend-login-page.onrender.com/reset-password/${id}/${token}`, { password })
             .then(res => {
                 if (res.data.Status === "Success") {
                     navigate('/login')

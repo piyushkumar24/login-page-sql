@@ -8,7 +8,7 @@ function Home({ email }) {
         if (currentPassword) {
             const newPasswordInput = prompt("Enter your new password:");
             if (newPasswordInput) {
-                axios.post('http://localhost:8081/changepassword', {
+                axios.post('https://sql-backend-login-page.onrender.com/changepassword', {
     email: email,
     currentPassword: currentPassword,
     newPassword: newPasswordInput

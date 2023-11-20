@@ -21,7 +21,7 @@ function ForgotPassword() {
 
     const handleSendVerificationLink = () => {
         axios
-            .post('http://localhost:8081/forgotpassword', { email })
+            .post('https://sql-backend-login-page.onrender.com/forgotpassword', { email })
             .then((res) => {
                 setMessage(res.data.message);
             })
@@ -30,7 +30,7 @@ function ForgotPassword() {
 
     const handleResetPassword = () => {
         axios
-            .post('http://localhost:8081/resetpassword', { email, verificationCode, newPassword })
+            .post('https://sql-backend-login-page.onrender.com/resetpassword', { email, verificationCode, newPassword })
             .then((res) => {
                 setMessage(res.data.message);
             })
